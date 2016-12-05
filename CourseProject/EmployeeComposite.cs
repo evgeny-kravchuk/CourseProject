@@ -99,12 +99,12 @@ namespace CourseProject
         public override void Update()
         {
             Console.WriteLine("{0} получил(a) уведомление об изменении среди подчиненных. Подробнее? (y/n)", Name);
-            /*switch (Console.ReadLine())
+            switch (Console.ReadLine())
             {
                 case "y":
                     PrintSupervisorOf(1);
                     break;
-            }*/
+            }
         }
     }
 }

@@ -34,15 +34,22 @@ namespace CourseProject
             zhenya.Name = "Женя";
 
             lori.AddEmployee(mark);
+            lori.Subscribe(mark);
             lori.AddEmployee(kathy);
+            lori.Subscribe(kathy);
 
             mark.AddEmployee(liza);
+            mark.Subscribe(liza);
             mark.AddEmployee(david);
+            mark.Subscribe(david);
 
             kathy.AddEmployee(mike);
+            kathy.Subscribe(mike);
 
             mike.AddEmployee(igorr);
+            mike.Subscribe(igorr);
             mike.AddEmployee(zhenya);
+            mike.Subscribe(zhenya);
 
             Console.WriteLine();
             lori.PrintSupervisorOf(5);
@@ -50,6 +57,11 @@ namespace CourseProject
             Console.WriteLine("\n--- Info about co-workers ---\n");
 
             PrintBoss.PrintInfo(lori);
+
+            Console.WriteLine("\n--- Co-workers (using observer) ---\n");
+            kathy.RemoveEmployee(mike);
+            mike.RemoveEmployee(igorr);
+            mark.RemoveEmployee(david);
 
             Console.WriteLine("\n===== Relatives =====\n");
 
@@ -72,13 +84,19 @@ namespace CourseProject
             alyona.Name = "Альона";
 
             volodymyr.AddChild(anatolii);
+            volodymyr.Subscribe(anatolii);
             volodymyr.AddChild(igor);
+            volodymyr.Subscribe(igor);
 
             anatolii.AddChild(artyom);
+            anatolii.Subscribe(artyom);
             anatolii.AddChild(olya);
+            anatolii.Subscribe(olya);
 
             igor.AddChild(evhenii);
+            igor.Subscribe(evhenii);
             igor.AddChild(alyona);
+            igor.Subscribe(alyona);
 
             Console.WriteLine();
             volodymyr.PrintRelativesOf(5);
@@ -87,7 +105,12 @@ namespace CourseProject
 
             PrintBossAdapterForRelatives adapterVolodymyr = new PrintBossAdapterForRelatives(volodymyr);
             PrintBoss.PrintInfo(adapterVolodymyr);
-            
+
+            Console.WriteLine("\n--- Relatives (using observer) ---\n");
+            volodymyr.RemoveChild(anatolii);
+            anatolii.RemoveChild(artyom);
+            anatolii.RemoveChild(olya);
+
             Console.ReadKey();
         }
     }

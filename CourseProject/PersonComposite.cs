@@ -89,12 +89,12 @@ namespace CourseProject
         public override void Update()
         {
             Console.WriteLine("{0} получил(a) уведомление об изменении в родовом древе. Подробнее? (y/n)", Name);
-            /*switch (Console.ReadLine())
+            switch (Console.ReadLine())
             {
                 case "y":
                     PrintRelativesOf(1);
                     break;
-            }*/
+            }
         }
     }
 }
