@@ -9,12 +9,14 @@ namespace CourseProject
     public class EmployeeComposite : EmployeeComponent
     {
         public IList<EmployeeComponent> employees;
+        public List<IObserver> observers;
 
         public override string Name { get; set; }
 
         public EmployeeComposite()
         {
             employees = new List<EmployeeComponent>();
+            observers = new List<IObserver>();
         }
 
         public override void Salary()
@@ -60,11 +62,13 @@ namespace CourseProject
         public void AddEmployee(EmployeeComponent e)
         {
             employees.Add(e);
+            NotifyObservers();
         }
 
         public void RemoveEmployee(EmployeeComponent e)
         {
             employees.Remove(e);
+            NotifyObservers();
         }
 
         public override void PrintSupervisorOf(int spacing)
@@ -75,6 +79,32 @@ namespace CourseProject
             {
                 e.PrintSupervisorOf(spacing + 1);
             }
+        }
+
+        public override void NotifyObservers()
+        {
+            Update();
+        }
+
+        public override void Subscribe(IObserver observer)
+        {
+            observers.Add(observer);
+        }
+
+        public override void Unsubscribe(IObserver observer)
+        {
+            observers.Remove(observer);
+        }
+
+        public override void Update()
+        {
+            Console.WriteLine("{0} получил(a) уведомление об изменении среди подчиненных. Подробнее? (y/n)", Name);
+            /*switch (Console.ReadLine())
+            {
+                case "y":
+                    PrintSupervisorOf(1);
+                    break;
+            }*/
         }
     }
 }

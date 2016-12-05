@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CourseProject
 {
-    public abstract class EmployeeComponent : IObserver
+    public abstract class PersonComponent : IObserver
     {
         public virtual string Name { set; get; }
 
-        public virtual void PrintSupervisorOf(int spacing)
+        public virtual void PrintRelativesOf(int spacing)
         {
             for (int counter = 0; counter < spacing; counter++)
             {
@@ -19,22 +19,18 @@ namespace CourseProject
             Console.WriteLine(Name);
         }
 
-        public virtual void Salary()
+        public virtual void Heirs()
         {
-            int sal = 1000;
-            Console.WriteLine("Зарплата сотрудника: " + sal);
+            int heirs = 0;
+            Console.WriteLine("Наследники: " + heirs);
         }
 
-        public virtual double getSalary()
+        public virtual double getHeirs()
         {
-            return 1000;
+            return 0;
         }
 
-        public virtual void Rise()
-        {
-        }
-
-        public virtual void Lead()
+        public virtual void Children()
         {
         }
 
