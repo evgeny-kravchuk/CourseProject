@@ -1,0 +1,9 @@
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\CourseProject.Tests.dll
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\CourseProject.Tests.pdb
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\CourseProject.exe
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\CourseProject.pdb
+E:\Enginearing\CourseProject\CourseProject.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\Enginearing\CourseProject\CourseProject.Tests\obj\Debug\CourseProject.Tests.csprojResolveAssemblyReference.cache
+E:\Enginearing\CourseProject\CourseProject.Tests\obj\Debug\CourseProject.Tests.dll
+E:\Enginearing\CourseProject\CourseProject.Tests\obj\Debug\CourseProject.Tests.pdb

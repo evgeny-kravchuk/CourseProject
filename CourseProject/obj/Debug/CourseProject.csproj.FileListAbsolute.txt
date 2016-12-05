@@ -1,0 +1,6 @@
+E:\Enginearing\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+E:\Enginearing\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+E:\Enginearing\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+E:\Enginearing\CourseProject\CourseProject\obj\Debug\CourseProject.csprojResolveAssemblyReference.cache
+E:\Enginearing\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+E:\Enginearing\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
